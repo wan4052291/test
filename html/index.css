@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.left_nav{
+    display: flex;
+    flex-direction: column;
+    left:0%;
+    width:20%;
+    background-color: azure;
+}
+.right_content{
+    top:0%;
+    margin-left:20%;
+    background-color: red;
+}

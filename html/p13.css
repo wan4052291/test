@@ -1,0 +1,54 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.xx{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    margin: -150px 0 0 -150px;
+    font-family: 'Noto Sans TC', sans-serif;
+    border:2px solid black;
+    padding:20px 10px 20px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.inp_sec{
+    margin-top: 20px;
+}
+
+.inp_sec>a , .inp_sec>input[type="submit"]{
+    text-decoration: none;
+    color:black;
+    padding: 10px 15px;
+    border:2px solid black;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.a_btn:hover{
+    background-color: lightblue;
+}
+
+.inp_sec>a:hover{
+    background-color: lightblue;
+}
+.a_top{
+    margin-top: 20px;
+}
+/* input{
+    border-radius: 5px;
+    padding: 5px;
+} */
+table, tr,td,th{
+    border: solid 1px #abc;
+}

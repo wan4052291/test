@@ -10,6 +10,8 @@
         'student',
         // '',
     ];
+
+    
     // 欄位 中文對照表
     $column_map = [
         'student_id'=>'學號',
@@ -48,6 +50,15 @@
         'course_id'=>'課程ID',
         'course_name'=>'課程名稱',
         'grade'=>'成績',
+        'dept_view' =>'科系',
+        'lic_view'=>'證照',
+        'act_view'=>'活動經歷',
+        'prc_view'=>'實習經歷',
+        'proj_view'=>'專題',
+        'race_view'=>'競賽經歷',
+        'takes_view'=>'修課資料',
+        'student'=>'學生',
+
     ];
 ?>
 <div>
@@ -55,7 +66,8 @@
         <select name="table_name" id="">
             <?php
                 foreach($table_list as $tb){
-                    echo "<option value='$tb'>$tb</option>";
+                    $temp_wrap = $column_map[$tb];
+                    echo "<option value='$tb'>$temp_wrap</option>";
                 }
             ?>
         </select>

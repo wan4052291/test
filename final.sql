@@ -125,7 +125,7 @@ CREATE TABLE `license` (
   PRIMARY KEY (`license_id`),
   KEY `student_id` (`student_id`),
   CONSTRAINT `license_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `student` (`student_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -134,7 +134,7 @@ CREATE TABLE `license` (
 
 LOCK TABLES `license` WRITE;
 /*!40000 ALTER TABLE `license` DISABLE KEYS */;
-INSERT INTO `license` VALUES ('AMA','40843224',4),('AMA','40843213',5),('PMP','40843213',6),('AMA','40843221',7),('AMA','40843231',8),('MCSA','40843231',9),('MCAD','40843231',10),('MCTS','40843231',11),('RHCE','40843294',12),('MCSE','40843295',13),('CCIE','40843295',14),('CISSP','40843296',15),('PMP','40843297',16),('CCNA','40843298',17),('TCSE','40843299',18);
+INSERT INTO `license` VALUES ('AMA','40843213',5),('PMP','40843213',6),('AMA','40843221',7),('AMA','40843231',8),('MCSA','40843231',9),('MCAD','40843231',10),('MCTS','40843231',11),('RHCE','40843294',12),('MCSE','40843295',13),('CCIE','40843295',14),('CISSP','40843296',15),('PMP','40843297',16),('CCNA','40843298',17),('TCSE','40843299',18),('TCSE','40843299',19);
 /*!40000 ALTER TABLE `license` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -174,7 +174,7 @@ CREATE TABLE `prcexp` (
   PRIMARY KEY (`prcexp_id`),
   KEY `student_id` (`student_id`),
   CONSTRAINT `prcexp_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `student` (`student_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -183,7 +183,7 @@ CREATE TABLE `prcexp` (
 
 LOCK TABLES `prcexp` WRITE;
 /*!40000 ALTER TABLE `prcexp` DISABLE KEYS */;
-INSERT INTO `prcexp` VALUES ('Chung-Shan',112,'intern','25000/M nice','Cloud Compute','40843224',3),('ChaoYangLab',2022,'slave','PAINNNNNNNNNNNNN','Homeworker','40843213',4),('Goverment',2220,'president','MONEYMONEY','oppress the people','40843221',5),('Chung-Shan',2022,'intern','NICE','sweep the floor','40843231',6),('ChaoYangLab',2025,'slave','NO MONEY QQ','delivery','40843231',7),('Executive Yuan',2023,'intern','Not Bad','deiver document','40843294',8),('Chung-Shan',2027,'Web Designer','Not Bad','Develop Web','40843295',9),('Tao-Yuan',2022,'intern','Best work','programming','40843296',10),('computer_center',2022,'Web Designer','NICE','Design Web','40843297',11),('Chung-Shan',2022,'intern','sad','so busy','40843298',12),('Google',2022,'intern','good job','process douments','40843299',13);
+INSERT INTO `prcexp` VALUES ('Chung-Shan',112,'intern','25000/M nice','Cloud Compute','40843224',3),('ChaoYangLab',2022,'slave','PAINNNNNNNNNNNNN','Homeworker','40843213',4),('Goverment',2220,'president','MONEYMONEY','oppress the people','40843221',5),('Chung-Shan',2022,'intern','NICE','sweep the floor','40843231',6),('ChaoYangLab',2025,'slave','NO MONEY QQ','delivery','40843231',7),('Executive Yuan',2023,'intern','Not Bad','deiver document','40843294',8),('Chung-Shan',2027,'Web Designer','Not Bad','Develop Web','40843295',9),('Tao-Yuan',2022,'intern','Best work','programming','40843296',10),('computer_center',2022,'Web Designer','NICE','Design Web','40843297',11),('Chung-Shan',2022,'intern','sad','so busy','40843298',12),('Google',2022,'intern','good job','process douments','40843299',13),('Google',2056,'intern','moneymoney','Good Job!','40843244',14);
 /*!40000 ALTER TABLE `prcexp` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -331,7 +331,7 @@ CREATE TABLE `student` (
 
 LOCK TABLES `student` WRITE;
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES ('40843201','Xiao','csie'),('40843213','Liu,Yale-Peko','csie'),('40843221','Yu,Cheng-Ru','csie'),('40843224','HUANG-BO-WEI','csie'),('40843231','HONG,MING-XAIN','csie'),('40843294','Tian-Shen-Jie','csie'),('40843295','A-Bao','EE'),('40843296','Lao-Pi','OEE'),('40843297','XiaoMei','ME'),('40843298','XiaoMing','MDE'),('40843299','XiaoXiao','PME');
+INSERT INTO `student` VALUES ('40843201','Xiao','csie'),('40843213','Liu,Yale-Peko','csie'),('40843221','Yu,Cheng-Ru','csie'),('40843224','HUANG-BO-WEI','csie'),('40843231','HONG,MING-XAIN','csie'),('40843244','Test','csie'),('40843245','??','csie'),('40843294','Tian-Shen-Jie','csie'),('40843295','A-Bao','EE'),('40843296','Lao-Pi','OEE'),('40843297','XiaoMei','ME'),('40843298','XiaoMing','MDE'),('40843299','XiaoXiao','PME');
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -358,7 +358,7 @@ CREATE TABLE `takes` (
 
 LOCK TABLES `takes` WRITE;
 /*!40000 ALTER TABLE `takes` DISABLE KEYS */;
-INSERT INTO `takes` VALUES ('40843201','1721','Biology','100'),('40843213','1922','COVID-19','100'),('40843221','1922','COVID-21','100'),('40843224','1658','Plane','60'),('40843224','1922','COVID-19','0'),('40843231','1302','WW3','80'),('40843294','1302','WW3','0'),('40843295','2048','gym class','60'),('40843295','2632','Biology','0'),('40843296','2046','WW2','56'),('40843297','1068','geography','42'),('40843298','7658','Machine Learn','53'),('40843299','1543','AI','100');
+INSERT INTO `takes` VALUES ('40843201','1721','Biology','100'),('40843213','1922','COVID-19','100'),('40843221','1922','COVID-21','100'),('40843224','1658','Plane','60'),('40843224','1922','COVID-19','0'),('40843231','1302','WW3','80'),('40843244','1935','TestCourse','100'),('40843294','1302','WW3','0'),('40843295','2048','gym class','60'),('40843295','2632','Biology','0'),('40843296','2046','WW2','56'),('40843297','1068','geography','42'),('40843298','7658','Machine Learn','53'),('40843299','1543','AI','100');
 /*!40000 ALTER TABLE `takes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -520,4 +520,4 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-12 12:19:54
+-- Dump completed on 2022-06-14 22:24:25
